@@ -1,0 +1,156 @@
+{
+  "alumni": [
+    {
+      "id": 1,
+      "name": "Rohan Shrestha",
+      "olympiad": "IMO",
+      "year": 2023,
+      "achievement": "Bronze Medal",
+      "currentInstitution": "Massachusetts Institute of Technology",
+      "currentProgram": "Computer Science",
+      "photo": "/images/alumni/placeholder.jpg",
+      "linkedin": "https://linkedin.com/in/placeholder",
+      "email": "alumni@example.com",
+      "quote": "Consistent practice with past IMO problems and understanding core concepts deeply was key to my success.",
+      "preparationTips": [
+        "Focus on problem-solving techniques, not just memorization",
+        "Practice daily with increasing difficulty",
+        "Join study groups and discuss solutions",
+        "Learn from mistakes and analyze failed attempts"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Anjali Thapa",
+      "olympiad": "IPhO",
+      "year": 2022,
+      "achievement": "Silver Medal",
+      "currentInstitution": "Stanford University",
+      "currentProgram": "Physics",
+      "photo": "/images/alumni/placeholder.jpg",
+      "linkedin": "https://linkedin.com/in/placeholder",
+      "email": "alumni@example.com",
+      "quote": "Experimental physics practice and theoretical understanding must go hand in hand for IPhO success.",
+      "preparationTips": [
+        "Master theoretical concepts thoroughly",
+        "Practice laboratory experiments regularly",
+        "Time management in exams is crucial",
+        "Study international physics olympiad resources"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Sanjay Gurung",
+      "olympiad": "IOI",
+      "year": 2023,
+      "achievement": "Gold Medal",
+      "currentInstitution": "Carnegie Mellon University",
+      "currentProgram": "Computer Science",
+      "photo": "/images/alumni/placeholder.jpg",
+      "linkedin": "https://linkedin.com/in/placeholder",
+      "email": "alumni@example.com",
+      "quote": "Algorithm practice on Codeforces and studying classic problems daily helped me reach gold medal level.",
+      "preparationTips": [
+        "Practice on competitive programming platforms daily",
+        "Master data structures and algorithms",
+        "Participate in online contests regularly",
+        "Learn from editorial solutions after contests"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Priya Maharjan",
+      "olympiad": "IChO",
+      "year": 2022,
+      "achievement": "Bronze Medal",
+      "currentInstitution": "University of Cambridge",
+      "currentProgram": "Chemistry",
+      "photo": "/images/alumni/placeholder.jpg",
+      "linkedin": "https://linkedin.com/in/placeholder",
+      "email": "alumni@example.com",
+      "quote": "Understanding reaction mechanisms and practicing laboratory safety are essential for chemistry olympiad.",
+      "preparationTips": [
+        "Study all chemistry domains equally",
+        "Practice past IChO problems extensively",
+        "Develop strong lab skills",
+        "Connect theory with practical applications"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Kamal Bhandari",
+      "olympiad": "IBO",
+      "year": 2023,
+      "achievement": "Silver Medal",
+      "currentInstitution": "Harvard University",
+      "currentProgram": "Biology",
+      "photo": "/images/alumni/placeholder.jpg",
+      "linkedin": "https://linkedin.com/in/placeholder",
+      "email": "alumni@example.com",
+      "quote": "Integrating practical lab experience with theoretical biology knowledge was crucial for my preparation.",
+      "preparationTips": [
+        "Cover all IBO syllabus topics systematically",
+        "Practice microscopy and dissection regularly",
+        "Stay updated with recent biological discoveries",
+        "Use diagrams to understand complex processes"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Suraj Tamang",
+      "olympiad": "IOAA",
+      "year": 2022,
+      "achievement": "Bronze Medal",
+      "currentInstitution": "California Institute of Technology",
+      "currentProgram": "Astrophysics",
+      "photo": "/images/alumni/placeholder.jpg",
+      "linkedin": "https://linkedin.com/in/placeholder",
+      "email": "alumni@example.com",
+      "quote": "Observational practice with telescopes and understanding celestial mechanics were my strongest preparation strategies.",
+      "preparationTips": [
+        "Practice data analysis and interpretation",
+        "Learn to use star charts and planetarium software",
+        "Study planetary motion and orbits thoroughly",
+        "Practice observational astronomy whenever possible"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Maya Rai",
+      "olympiad": "IOL",
+      "year": 2023,
+      "achievement": "Honorable Mention",
+      "currentInstitution": "University of Oxford",
+      "currentProgram": "Linguistics",
+      "photo": "/images/alumni/placeholder.jpg",
+      "linkedin": "https://linkedin.com/in/placeholder",
+      "email": "alumni@example.com",
+      "quote": "Pattern recognition and logical thinking are more important than language knowledge for IOL success.",
+      "preparationTips": [
+        "Practice solving past IOL problems",
+        "Focus on pattern recognition skills",
+        "Study different language families",
+        "Work on problems with teammates for diverse perspectives"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Bikram Adhikari",
+      "olympiad": "IMO",
+      "year": 2021,
+      "achievement": "Silver Medal",
+      "currentInstitution": "Princeton University",
+      "currentProgram": "Mathematics",
+      "photo": "/images/alumni/placeholder.jpg",
+      "linkedin": "https://linkedin.com/in/placeholder",
+      "email": "alumni@example.com",
+      "quote": "Geometry and number theory require special attention. I spent months mastering these topics specifically.",
+      "preparationTips": [
+        "Build strong foundations in all four IMO areas",
+        "Study from Art of Problem Solving books",
+        "Participate in online math forums",
+        "Learn proof-writing techniques"
+      ]
+    }
+  ]
+}
