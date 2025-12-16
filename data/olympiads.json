@@ -1,0 +1,228 @@
+{
+  "olympiads": [
+    {
+      "id": "imo",
+      "name": "International Mathematical Olympiad",
+      "shortName": "IMO",
+      "subject": "Mathematics",
+      "description": "The most prestigious mathematics competition for high school students worldwide, established in 1959.",
+      "eligibility": "Students under 20 years old, not enrolled in tertiary education",
+      "selectionProcess": [
+        "School-level Mathematics Olympiad",
+        "District-level competition",
+        "National Mathematics Olympiad (NMO)",
+        "Nepal IMO Training Camp",
+        "Final team selection (6 students)"
+      ],
+      "contactOrganization": "Nepal Mathematical Society",
+      "contactEmail": "info@nms.org.np",
+      "website": "https://www.imo-official.org",
+      "examCenters": ["Kathmandu", "Pokhara", "Biratnagar"],
+      "registrationFee": "NPR 500 (school level)",
+      "timeline": {
+        "registration": "September - October",
+        "schoolLevel": "November",
+        "districtLevel": "December",
+        "nationalLevel": "January",
+        "trainingCamp": "March - May",
+        "international": "July"
+      },
+      "syllabus": ["Algebra", "Combinatorics", "Geometry", "Number Theory"],
+      "difficulty": "Very High",
+      "teamSize": 6,
+      "lastChecked": "2025-01-15"
+    },
+    {
+      "id": "ipho",
+      "name": "International Physics Olympiad",
+      "shortName": "IPhO",
+      "subject": "Physics",
+      "description": "Annual physics competition for high school students, testing theoretical and experimental skills.",
+      "eligibility": "Students in secondary education, under 20 years old",
+      "selectionProcess": [
+        "School-level Physics Olympiad",
+        "Regional competition",
+        "National Physics Olympiad (NPhO)",
+        "Nepal IPhO Training Camp",
+        "Final team selection (5 students)"
+      ],
+      "contactOrganization": "Nepal Physical Society",
+      "contactEmail": "physics@nps.org.np",
+      "website": "https://www.ipho-new.org",
+      "examCenters": ["Kathmandu", "Lalitpur", "Bhaktapur"],
+      "registrationFee": "NPR 600",
+      "timeline": {
+        "registration": "August - September",
+        "schoolLevel": "October",
+        "regionalLevel": "November",
+        "nationalLevel": "December",
+        "trainingCamp": "February - April",
+        "international": "July"
+      },
+      "syllabus": ["Mechanics", "Thermodynamics", "Electromagnetism", "Optics", "Modern Physics", "Experimental Physics"],
+      "difficulty": "Very High",
+      "teamSize": 5,
+      "lastChecked": "2025-01-15"
+    },
+    {
+      "id": "icho",
+      "name": "International Chemistry Olympiad",
+      "shortName": "IChO",
+      "subject": "Chemistry",
+      "description": "Global chemistry competition emphasizing both theoretical knowledge and laboratory skills.",
+      "eligibility": "Secondary school students, under 20 years old",
+      "selectionProcess": [
+        "School-level Chemistry Olympiad",
+        "District-level test",
+        "National Chemistry Olympiad (NChO)",
+        "Nepal IChO Training Camp",
+        "Final team selection (4 students)"
+      ],
+      "contactOrganization": "Nepal Chemical Society",
+      "contactEmail": "contact@ncs.org.np",
+      "website": "https://www.icho-official.org",
+      "examCenters": ["Kathmandu", "Pokhara"],
+      "registrationFee": "NPR 700",
+      "timeline": {
+        "registration": "September - October",
+        "schoolLevel": "November",
+        "districtLevel": "December",
+        "nationalLevel": "January",
+        "trainingCamp": "March - May",
+        "international": "July"
+      },
+      "syllabus": ["Physical Chemistry", "Inorganic Chemistry", "Organic Chemistry", "Analytical Chemistry", "Laboratory Techniques"],
+      "difficulty": "Very High",
+      "teamSize": 4,
+      "lastChecked": "2025-01-15"
+    },
+    {
+      "id": "ibo",
+      "name": "International Biology Olympiad",
+      "shortName": "IBO",
+      "subject": "Biology",
+      "description": "International competition testing biology knowledge and experimental abilities.",
+      "eligibility": "Secondary school students under 20",
+      "selectionProcess": [
+        "School-level Biology Olympiad",
+        "Regional screening",
+        "National Biology Olympiad (NBO)",
+        "Nepal IBO Training Camp",
+        "Final team selection (4 students)"
+      ],
+      "contactOrganization": "Nepal Biotechnology Association",
+      "contactEmail": "info@biotechnepal.org",
+      "website": "https://www.ibo-info.org",
+      "examCenters": ["Kathmandu", "Chitwan"],
+      "registrationFee": "NPR 600",
+      "timeline": {
+        "registration": "August - September",
+        "schoolLevel": "October",
+        "regionalLevel": "November",
+        "nationalLevel": "December",
+        "trainingCamp": "February - May",
+        "international": "July"
+      },
+      "syllabus": ["Cell Biology", "Plant Anatomy", "Animal Anatomy", "Genetics", "Ecology", "Biosystematics", "Experimental Biology"],
+      "difficulty": "High",
+      "teamSize": 4,
+      "lastChecked": "2025-01-15"
+    },
+    {
+      "id": "ioi",
+      "name": "International Olympiad in Informatics",
+      "shortName": "IOI",
+      "subject": "Computer Science",
+      "description": "Premier algorithmic programming competition for secondary school students.",
+      "eligibility": "Secondary school students, participation limited based on previous medals",
+      "selectionProcess": [
+        "Online coding contests",
+        "Regional programming competition",
+        "National Olympiad in Informatics (NOI)",
+        "Nepal IOI Training Camp",
+        "Final team selection (4 students)"
+      ],
+      "contactOrganization": "Computer Association of Nepal",
+      "contactEmail": "ioi@can.org.np",
+      "website": "https://ioinformatics.org",
+      "examCenters": ["Kathmandu", "Online"],
+      "registrationFee": "NPR 500",
+      "timeline": {
+        "registration": "October - November",
+        "onlineRounds": "December - January",
+        "regionalLevel": "February",
+        "nationalLevel": "March",
+        "trainingCamp": "April - June",
+        "international": "August"
+      },
+      "syllabus": ["Algorithms", "Data Structures", "Graph Theory", "Dynamic Programming", "Combinatorics", "Computational Geometry"],
+      "difficulty": "Very High",
+      "teamSize": 4,
+      "lastChecked": "2025-01-15"
+    },
+    {
+      "id": "ioaa",
+      "name": "International Olympiad on Astronomy and Astrophysics",
+      "shortName": "IOAA",
+      "subject": "Astronomy",
+      "description": "Competition testing theoretical knowledge, data analysis, and observational astronomy skills.",
+      "eligibility": "Secondary school students under 18 years old",
+      "selectionProcess": [
+        "School-level Astronomy Quiz",
+        "Regional astronomy competition",
+        "National Astronomy Olympiad (NAO)",
+        "Nepal IOAA Training Camp",
+        "Final team selection (5 students)"
+      ],
+      "contactOrganization": "Nepal Astronomical Society",
+      "contactEmail": "astro@nas.org.np",
+      "website": "http://www.ioaa-astronomy.org",
+      "examCenters": ["Kathmandu"],
+      "registrationFee": "NPR 500",
+      "timeline": {
+        "registration": "September - October",
+        "schoolLevel": "November",
+        "regionalLevel": "December",
+        "nationalLevel": "January",
+        "trainingCamp": "March - June",
+        "international": "August"
+      },
+      "syllabus": ["Theoretical Astronomy", "Data Analysis", "Observational Astronomy", "Celestial Mechanics", "Astrophysics"],
+      "difficulty": "High",
+      "teamSize": 5,
+      "lastChecked": "2025-01-15"
+    },
+    {
+      "id": "iol",
+      "name": "International Linguistics Olympiad",
+      "shortName": "IOL",
+      "subject": "Linguistics",
+      "description": "Unique competition solving linguistic puzzles from diverse languages, requiring logical reasoning.",
+      "eligibility": "Secondary school students, no prior linguistics knowledge required",
+      "selectionProcess": [
+        "School-level Linguistics Challenge",
+        "Regional linguistics test",
+        "National Linguistics Olympiad (NLO)",
+        "Nepal IOL Training Workshop",
+        "Final team selection (4 students + 2 guest students)"
+      ],
+      "contactOrganization": "Linguistic Society of Nepal",
+      "contactEmail": "linguistics@lsn.org.np",
+      "website": "https://ioling.org",
+      "examCenters": ["Kathmandu", "Pokhara"],
+      "registrationFee": "NPR 400",
+      "timeline": {
+        "registration": "November - December",
+        "schoolLevel": "January",
+        "regionalLevel": "February",
+        "nationalLevel": "March",
+        "trainingWorkshop": "May - June",
+        "international": "July"
+      },
+      "syllabus": ["Linguistic Puzzles", "Phonology", "Morphology", "Syntax", "Semantics", "Writing Systems"],
+      "difficulty": "Medium to High",
+      "teamSize": 4,
+      "lastChecked": "2025-01-15"
+    }
+  ]
+}
