@@ -1,0 +1,8 @@
+# robots.txt for Nepal Olympiad Hub
+# Allow all search engines to index everything
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://crazy-cat-crypto.github.io/nepal-olympiad-hub/sitemap.xml
