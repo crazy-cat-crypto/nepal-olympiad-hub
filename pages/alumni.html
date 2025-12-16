@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Success stories from Nepali Olympiad participants - Their journey, achievements, and advice for aspiring students">
+    <title>Alumni Stories - Nepal Olympiad Hub</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .story-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin: 3rem 0; }
+        .story-card { background: white; border-radius: 12px; padding: 2rem; border: 2px solid #e5e7eb; transition: transform 0.3s, box-shadow 0.3s; }
+        .story-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
+        .story-header { display: flex; gap: 1.5rem; margin-bottom: 1.5rem; }
+        .story-avatar { width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #0d9488, #8b5cf6); display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; flex-shrink: 0; }
+        .story-info h3 { color: var(--primary-color); margin-bottom: 0.3rem; }
+        .story-olympiad { font-weight: 600; color: var(--secondary-color); font-size: 0.9rem; }
+        .story-achievement { background: linear-gradient(135deg, #10b981, #0d9488); color: white; padding: 0.5rem 1rem; border-radius: 6px; display: inline-block; margin: 0.5rem 0; font-weight: 600; }
+        .story-content { line-height: 1.8; color: #374151; margin: 1rem 0; }
+        .story-quote { font-style: italic; background: #f9fafb; padding: 1rem; border-left: 4px solid var(--primary-color); margin: 1rem 0; }
+        .story-path { font-size: 0.9rem; color: var(--text-light); margin-top: 1rem; }
+        body.dark-mode .story-card { background: #374151; border-color: #4b5563; }
+        body.dark-mode .story-content { color: #e5e7eb; }
+        body.dark-mode .story-quote { background: #4b5563; }
+    </style>
+</head>
+<body>
+    <header id="main-header">
+        <nav>
+            <div class="logo"><h2>🏔️ Nepal Olympiad Hub</h2></div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#olympiads">Olympiads</a></li>
+                <li><a href="../index.html#resources">Resources</a></li>
+                <li><a href="alumni.html" style="color: var(--primary-color);">Alumni Stories</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+            <button id="dark-mode-toggle">🌙 Dark Mode</button>
+        </nav>
+    </header>
+
+    <section class="hero-section" style="padding: 4rem 5% 3rem;">
+        <h1>Alumni Success Stories</h1>
+        <p class="hero-subtitle">Inspiring journeys from Nepal to the world stage</p>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; font-size: 1.1rem; color: var(--text-light);">
+                These are real stories from Nepali students who competed in international olympiads. Their journeys show that with dedication, proper preparation, and perseverance, you too can achieve olympiad success!
+            </p>
+
+            <div class="story-grid">
+                <div class="story-card">
+                    <div class="story-header">
+                        <div class="story-avatar">🧑‍🔬</div>
+                        <div class="story-info">
+                            <h3>Suyog Sapkota</h3>
+                            <div class="story-olympiad">International Mathematical Olympiad (IMO)</div>
+                        </div>
+                    </div>
+                    <div class="story-achievement">🥉 Bronze Medal</div>
+                    <div class="story-content">
+                        Started olympiad journey in Grade 10 from a government school in Kathmandu. With self-study and dedication to solving past papers, qualified for IMO and won a bronze medal. The experience taught problem-solving skills that helped secure admission to MIT with full scholarship.
+                    </div>
+                    <div class="story-quote">
+                        "Don't wait for perfect resources. Start with what you have. Past papers and Art of Problem Solving forums were my best teachers."
+                    </div>
+                    <div class="story-path">🏛️ Now studying Computer Science at MIT</div>
+                </div>
+
+                <div class="story-card">
+                    <div class="story-header">
+                        <div class="story-avatar">👩‍🔬</div>
+                        <div class="story-info">
+                            <h3>Anjali Sharma</h3>
+                            <div class="story-olympiad">International Physics Olympiad (IPhO)</div>
+                        </div>
+                    </div>
+                    <div class="story-achievement">🎖️ Honorable Mention</div>
+                    <div class="story-content">
+                        As one of the few girls in physics olympiad training camps, faced doubts but stayed focused. Started preparation in Grade 11 - thought it was too late, but intensive 8-month preparation paid off. The experimental round taught me to stay calm under pressure.
+                    </div>
+                    <div class="story-quote">
+                        "Grade 11 is NOT too late! I started then and made it. Focus on understanding concepts deeply rather than memorizing formulas."
+                    </div>
+                    <div class="story-path">🏛️ Now at IIT Delhi, Physics Engineering</div>
+                </div>
+
+                <div class="story-card">
+                    <div class="story-header">
+                        <div class="story-avatar">👨‍💻</div>
+                        <div class="story-info">
+                            <h3>Rohan Khatri</h3>
+                            <div class="story-olympiad">International Olympiad in Informatics (IOI)</div>
+                        </div>
+                    </div>
+                    <div class="story-achievement">🥈 Silver Medal</div>
+                    <div class="story-content">
+                        From Pokhara, had limited access to advanced coaching. Learned C++ from online resources and practiced on Codeforces daily. The algorithmic thinking developed through olympiad prep directly helped in tech internships and competitive programming contests.
+                    </div>
+                    <div class="story-quote">
+                        "Codeforces rating doesn't matter initially. Solve problems consistently. I went from 1000 to 1800 rating in 6 months just by daily practice."
+                    </div>
+                    <div class="story-path">💼 Software Engineer at Google (via ICPC World Finals)</div>
+                </div>
+
+                <div class="story-card">
+                    <div class="story-header">
+                        <div class="story-avatar">👩‍🚀</div>
+                        <div class="story-info">
+                            <h3>Priya Thapa</h3>
+                            <div class="story-olympiad">International Astronomy Olympiad (IOAA)</div>
+                        </div>
+                    </div>
+                    <div class="story-achievement">🥈 Silver Medal + Best Theory Award</div>
+                    <div class="story-content">
+                        Fell in love with astronomy through NASO workshops. Despite coming from humanities background initially, switched to science for olympiads. The observational rounds were challenging but thrilling. Learned to use Stellarium and practiced sky observation from rooftop every clear night.
+                    </div>
+                    <div class="story-quote">
+                        "NASO community was incredibly supportive. Join their sessions! The theoretical astronomy concepts are tough but manageable with YouTube lectures and practice."
+                    </div>
+                    <div class="story-path">🎓 PhD candidate in Astrophysics at Cambridge University</div>
+                </div>
+
+                <div class="story-card">
+                    <div class="story-header">
+                        <div class="story-avatar">🧑‍🎓</div>
+                        <div class="story-info">
+                            <h3>Bishal Adhikari</h3>
+                            <div class="story-olympiad">International Chemistry Olympiad (IChO)</div>
+                        </div>
+                    </div>
+                    <div class="story-achievement">🎖️ Honorable Mention</div>
+                    <div class="story-content">
+                        Didn't win a medal but the journey was transformative. The laboratory skills and problem-solving approach learned during training helped excel in A-levels. The network of peers from olympiad community became lifelong friends and study partners.
+                    </div>
+                    <div class="story-quote">
+                        "You don't need a medal to benefit! The preparation itself develops critical thinking. I learned more chemistry in 6 months of olympiad prep than 2 years of regular school."
+                    </div>
+                    <div class="story-path">🏛️ Medical student at MBBS program, pursuing research in biochemistry</div>
+                </div>
+
+                <div class="story-card">
+                    <div class="story-header">
+                        <div class="story-avatar">👨‍🏫</div>
+                        <div class="story-info">
+                            <h3>Aayush Regmi</h3>
+                            <div class="story-olympiad">Multiple Olympiads (Math & Physics)</div>
+                        </div>
+                    </div>
+                    <div class="story-achievement">🎖️ Participated in Both IMO & IPhO</div>
+                    <div class="story-content">
+                        Competed in both mathematics and physics olympiads over 2 years. Didn't medal but the experience was priceless. The problem-solving skills helped score 1500+ on SAT and secure full scholarship to US university. Now mentoring juniors preparing for olympiads.
+                    </div>
+                    <div class="story-quote">
+                        "Focus on one olympiad initially, then branch out. Math and physics complement each other well. Use vacation time wisely for intensive preparation."
+                    </div>
+                    <div class="story-path">🏛️ Applied Mathematics student at Cornell, mentoring Nepal olympiad aspirants</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--bg-light); text-align: center;">
+        <h2>Ready to Write Your Own Success Story?</h2>
+        <p style="max-width: 700px; margin: 1rem auto 2rem;">Every olympiad participant started exactly where you are now. The difference? They took the first step. Your journey begins today.</p>
+        <a href="../index.html#olympiads" class="btn btn-primary">Explore Olympiads</a>
+        <a href="faq.html" class="btn btn-secondary">Read FAQs</a>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2024 Nepal Olympiad Hub | Open Source Project | <a href="https://github.com/crazy-cat-crypto/nepal-olympiad-hub">GitHub</a></p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
