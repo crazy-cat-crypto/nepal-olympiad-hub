@@ -207,4 +207,204 @@ All contributors must be credited. See [CONTRIBUTORS.md](CONTRIBUTORS.md).
 
 ---
 
+## 🔧 Maintenance & Update Guide
+
+This website uses a **data-driven architecture** for easy updates without touching the HTML/CSS code. All olympiad information is stored in JSON files that anyone can edit.
+
+### Why This Matters
+
+This design makes the website:
+- **Easy to maintain**: Update dates, contacts, or resources by editing simple JSON files
+- **Collaborative**: Multiple people can contribute without coding knowledge
+- **Version controlled**: Every change is tracked on GitHub with full history
+- **Browser updatable**: No need for local development environment
+
+### Quick Update Instructions
+
+#### Example 1: Update IMO 2026 Date
+
+**Scenario**: IMO 2026 announced for July 15-25 in Paris
+
+1. Go to [`data/olympiads.json`](data/olympiads.json)
+2. Click the **Edit** button (pencil icon)
+3. Find the IMO entry (search for `"id": "imo"`)
+4. Update the `nextEdition` section:
+   ```json
+   "nextEdition": {
+     "year": 2026,
+     "location": "Paris, France",
+     "dates": "July 15-25, 2026"
+   }
+   ```
+5. Scroll down, add a commit message: "Update IMO 2026 location and dates"
+6. Click **Commit changes**
+7. Done! The homepage and mathematics.html will automatically show the new information
+
+#### Example 2: Add a New Resource
+
+**Scenario**: You found an excellent physics problem bank
+
+1. Go to [`data/resources.json`](data/resources.json)
+2. Click the **Edit** button
+3. Add a new entry in the `"resources"` array:
+   ```json
+   {
+     "id": "physics-5",
+     "title": "Physics Olympiad Problem Bank 2024",
+     "type": "problems",
+     "subject": "physics",
+     "difficulty": "advanced",
+     "url": "https://example.com/physics-problems",
+     "description": "Comprehensive collection of IPhO-style problems with detailed solutions.",
+     "verified": "2025-01-15"
+   },
+   ```
+4. Commit with message: "Add physics problem bank resource"
+5. The resource will appear on the Resources page with automatic filtering
+
+#### Example 3: Update Contact Email
+
+**Scenario**: MAN changed their contact email
+
+1. Go to [`data/olympiads.json`](data/olympiads.json)
+2. Find the IMO entry
+3. Update the `contactEmail` field:
+   ```json
+   "contactEmail": "new.email@man.org.np"
+   ```
+4. Also update in [`pages/contact.html`](pages/contact.html) if email is hardcoded there
+5. Commit: "Update MAN contact email"
+
+### What Files Control What?
+
+| File | What It Controls |
+|------|------------------|
+| `data/olympiads.json` | All olympiad information: dates, contacts, fees, eligibility, past papers, resources per olympiad |
+| `data/resources.json` | Study resources shown on Resources page (books, websites, communities, problem banks) |
+| `data/alumni.json` | Alumni stories and achievements shown on Alumni page |
+| `data/faq.json` | Frequently Asked Questions with categories (Getting Started, Preparation, Selection, Opportunities, Technical) |
+| `pages/*.html` | Individual pages (mathematics.html, physics.html, etc.) - update only for major content changes |
+| `index.html` | Homepage - rarely needs updates (most data pulled from JSON files) |
+| `css/style.css` | Website design and styling - update only for visual changes |
+
+### Data Structure Reference
+
+#### olympiads.json Structure
+
+```json
+{
+  "olympiads": [
+    {
+      "id": "imo",
+      "name": "International Mathematical Olympiad",
+      "shortName": "IMO",
+      "subject": "Mathematics",
+      "description": "Brief description",
+      "eligibility": "Age/education requirements",
+      "selectionProcess": ["Step 1", "Step 2", "Step 3"],
+      "contactOrganization": "Mathematical Association of Nepal",
+      "contactPerson": "Name",
+      "contactEmail": "email@domain.np",
+      "website": "https://website.org",
+      "registrationFee": "NPR 500",
+      "timeline": {
+        "registration": "Month range",
+        "nationalLevel": "Month",
+        "international": "Month"
+      },
+      "nextEdition": {
+        "year": 2026,
+        "location": "City, Country",
+        "dates": "Month dates"
+      },
+      "pastPapers": [
+        {"year": 2024, "link": "https://..."}
+      ],
+      "resources": [
+        {
+          "title": "Resource name",
+          "type": "book|website|community|problems",
+          "difficulty": "beginner|intermediate|advanced",
+          "url": "https://...",
+          "description": "Brief description"
+        }
+      ],
+      "lastChecked": "2025-01-15"
+    }
+  ]
+}
+```
+
+### Best Practices
+
+#### When Updating Data
+
+1. **Verify Information**: Always double-check dates, emails, and links before updating
+2. **Use Clear Commit Messages**: "Update IMO 2026 dates" not "fix stuff"
+3. **Test Links**: Click every URL you add to ensure it works
+4. **Keep Verified Dates Current**: Update `lastChecked` field when verifying information
+5. **Preserve JSON Format**: Be careful with commas, quotes, and brackets
+
+#### JSON Editing Tips
+
+- **Commas**: Every item in an array/object needs a comma EXCEPT the last one
+- **Quotes**: Use double quotes `"` not single quotes `'`
+- **Test Your JSON**: Use [JSONLint](https://jsonlint.com/) to validate before committing
+- **Copy Existing Entries**: When adding new items, copy an existing entry and modify it
+
+### Troubleshooting
+
+**Problem**: Website not showing my updates
+- **Solution 1**: Wait 2-3 minutes for GitHub Pages to rebuild
+- **Solution 2**: Hard refresh your browser (Ctrl+Shift+R / Cmd+Shift+R)
+- **Solution 3**: Check if your JSON has syntax errors (use JSONLint)
+
+**Problem**: Broken JSON (site stops working)
+- **Solution**: Go to the file's History, find your commit, click "Revert"
+
+**Problem**: Don't know how to edit JSON
+- **Solution 1**: Ask in GitHub Issues with `question` label
+- **Solution 2**: Look at existing entries as examples
+- **Solution 3**: Use a JSON editor online to practice
+
+### Who Can Update?
+
+- **Anyone**: Can suggest changes via GitHub Issues
+- **Contributors**: Can submit Pull Requests with changes
+- **Maintainers**: Can directly edit files (repository access required)
+- **Olympiad Organizations**: Can request direct edit access by contacting maintainers
+
+### Requesting Updates
+
+If you don't have edit access:
+
+1. Go to [Issues](https://github.com/crazy-cat-crypto/nepal-olympiad-hub/issues/new)
+2. Click **New Issue**
+3. Title: "Update Request: [What needs updating]"
+4. Body: Explain the change needed with sources/verification
+5. Maintainers will review and apply the update
+
+### Regular Maintenance Checklist
+
+**Monthly**:
+- [ ] Verify all olympiad registration deadlines
+- [ ] Check if any competition dates changed
+- [ ] Test all external links (resources, official sites)
+- [ ] Update `lastChecked` dates in olympiads.json
+
+**After Each Competition**:
+- [ ] Update Nepal's performance data (medals, participants)
+- [ ] Add new alumni profiles (with permission)
+- [ ] Update FAQ if common new questions emerged
+- [ ] Check if organization contacts changed
+
+**Annually** (January):
+- [ ] Update all `nextEdition` years
+- [ ] Verify all organization contact information
+- [ ] Review and update resource links
+- [ ] Update "Last site update" date in Contact page
+
+---
+
+
 **Built with ❤️ by the Nepal Olympiad Community**
