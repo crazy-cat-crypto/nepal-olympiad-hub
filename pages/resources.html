@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comprehensive olympiad resources for Nepali students - books, websites, practice materials for IMO, IPhO, IOAA, IChO, IBO, IOI, IOL">
+    <title>Resources - Nepal Olympiad Hub</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .filters {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+        .filter-group {
+            margin-bottom: 1rem;
+        }
+        .filter-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .filter-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .filter-btn {
+            padding: 0.5rem 1rem;
+            border: 2px solid var(--primary);
+            background: transparent;
+            color: var(--text);
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .filter-btn.active {
+            background: var(--primary);
+            color: white;
+        }
+        .filter-btn:hover {
+            background: var(--primary);
+            color: white;
+        }
+        .search-box {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid var(--border);
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .resource-card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .resource-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .resource-type {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: var(--primary);
+            color: white;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-bottom: 0.5rem;
+        }
+        .resource-difficulty {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: var(--accent);
+            color: white;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin-left: 0.5rem;
+        }
+        .resource-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 0.5rem 0;
+        }
+        .resource-author {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        .resource-description {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin: 1rem 0;
+        }
+        .resource-link {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: opacity 0.3s;
+        }
+        .resource-link:hover {
+            opacity: 0.8;
+        }
+        .verified-badge {
+            color: var(--success);
+            font-size: 0.85rem;
+        }
+        .no-results {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../index.html">Nepal Olympiad Hub</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#olympiads">Olympiads</a></li>
+                <li><a href="resources.html" class="active">Resources</a></li>
+                <li><a href="alumni.html">Alumni</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+            <button class="theme-toggle" aria-label="Toggle dark mode">
+                <span class="sun">☀️</span>
+                <span class="moon">🌙</span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1 class="section-title">Learning Resources</h1>
+                <p class="section-subtitle">Curated study materials for olympiad preparation</p>
+
+                <!-- Filters -->
+                <div class="filters">
+                    <div class="filter-group">
+                        <label>Search:</label>
+                        <input type="text" id="searchInput" class="search-box" placeholder="Search resources by title or description...">
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Subject:</label>
+                        <div class="filter-buttons" id="subjectFilters">
+                            <button class="filter-btn active" data-filter="all">All</button>
+                            <button class="filter-btn" data-filter="mathematics">Mathematics</button>
+                            <button class="filter-btn" data-filter="physics">Physics</button>
+                            <button class="filter-btn" data-filter="astronomy">Astronomy</button>
+                            <button class="filter-btn" data-filter="chemistry">Chemistry</button>
+                            <button class="filter-btn" data-filter="biology">Biology</button>
+                            <button class="filter-btn" data-filter="informatics">Informatics</button>
+                            <button class="filter-btn" data-filter="linguistics">Linguistics</button>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Difficulty:</label>
+                        <div class="filter-buttons" id="difficultyFilters">
+                            <button class="filter-btn active" data-filter="all">All Levels</button>
+                            <button class="filter-btn" data-filter="beginner">Beginner</button>
+                            <button class="filter-btn" data-filter="intermediate">Intermediate</button>
+                            <button class="filter-btn" data-filter="advanced">Advanced</button>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Type:</label>
+                        <div class="filter-buttons" id="typeFilters">
+                            <button class="filter-btn active" data-filter="all">All Types</button>
+                            <button class="filter-btn" data-filter="book">Books</button>
+                            <button class="filter-btn" data-filter="website">Websites</button>
+                            <button class="filter-btn" data-filter="community">Communities</button>
+                            <button class="filter-btn" data-filter="tutorial">Tutorials</button>
+                            <button class="filter-btn" data-filter="problems">Problems</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resources Grid -->
+                <div class="resources-grid" id="resourcesGrid">
+                    <!-- Loaded dynamically from JavaScript -->
+                </div>
+
+                <div id="noResults" class="no-results" style="display:none;">
+                    <h3>No resources found</h3>
+                    <p>Try adjusting your filters or search terms</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Nepal Olympiad Hub | Open Source Project</p>
+            <p>Last Updated: December 2024</p>
+        </div>
+    </footer>
+
+    <script>
+        // Global variables
+        let allResources = [];
+        let activeSubject = 'all';
+        let activeDifficulty = 'all';
+        let activeType = 'all';
+        let searchTerm = '';
+
+        // Load resources from JSON
+        async function loadResources() {
+            try {
+                const response = await fetch('../data/resources.json');
+                const data = await response.json();
+                allResources = data.resources;
+                displayResources();
+            } catch (error) {
+                console.error('Error loading resources:', error);
+            }
+        }
+
+        // Display resources
+        function displayResources() {
+            const grid = document.getElementById('resourcesGrid');
+            const noResults = document.getElementById('noResults');
+            
+            // Filter resources
+            const filtered = allResources.filter(resource => {
+                const matchesSubject = activeSubject === 'all' || resource.subject === activeSubject;
+                const matchesDifficulty = activeDifficulty === 'all' || resource.difficulty === activeDifficulty || resource.difficulty === 'all';
+                const matchesType = activeType === 'all' || resource.type === activeType;
+                const matchesSearch = searchTerm === '' || 
+                    resource.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                    resource.description.toLowerCase().includes(searchTerm.toLowerCase());
+                
+                return matchesSubject && matchesDifficulty && matchesType && matchesSearch;
+            });
+
+            if (filtered.length === 0) {
+                grid.innerHTML = '';
+                noResults.style.display = 'block';
+                return;
+            }
+
+            noResults.style.display = 'none';
+            grid.innerHTML = filtered.map(resource => `
+                <div class="resource-card">
+                    <div>
+                        <span class="resource-type">${formatType(resource.type)}</span>
+                        <span class="resource-difficulty">${formatDifficulty(resource.difficulty)}</span>
+                    </div>
+                    <h3 class="resource-title">${resource.title}</h3>
+                    ${resource.author ? `<p class="resource-author">by ${resource.author}</p>` : ''}
+                    <p class="resource-description">${resource.description}</p>
+                    <a href="${resource.url}" class="resource-link" target="_blank" rel="noopener">Access Resource</a>
+                    <p class="verified-badge">✓ Verified ${resource.verified}</p>
+                </div>
+            `).join('');
+        }
+
+        // Format functions
+        function formatType(type) {
+            const types = {
+                'book': '📚 Book',
+                'website': '🌐 Website',
+                'community': '👥 Community',
+                'tutorial': '📖 Tutorial',
+                'problems': '🎯 Problems'
+            };
+            return types[type] || type;
+        }
+
+        function formatDifficulty(difficulty) {
+            const difficulties = {
+                'beginner': '⭐ Beginner',
+                'intermediate': '⭐⭐ Intermediate',
+                'advanced': '⭐⭐⭐ Advanced',
+                'all': '⭐ All Levels'
+            };
+            return difficulties[difficulty] || difficulty;
+        }
+
+        // Filter event listeners
+        function setupFilters() {
+            // Subject filters
+            document.getElementById('subjectFilters').addEventListener('click', (e) => {
+                if (e.target.classList.contains('filter-btn')) {
+                    document.querySelectorAll('#subjectFilters .filter-btn').forEach(btn => btn.classList.remove('active'));
+                    e.target.classList.add('active');
+                    activeSubject = e.target.dataset.filter;
+                    displayResources();
+                }
+            });
+
+            // Difficulty filters
+            document.getElementById('difficultyFilters').addEventListener('click', (e) => {
+                if (e.target.classList.contains('filter-btn')) {
+                    document.querySelectorAll('#difficultyFilters .filter-btn').forEach(btn => btn.classList.remove('active'));
+                    e.target.classList.add('active');
+                    activeDifficulty = e.target.dataset.filter;
+                    displayResources();
+                }
+            });
+
+            // Type filters
+            document.getElementById('typeFilters').addEventListener('click', (e) => {
+                if (e.target.classList.contains('filter-btn')) {
+                    document.querySelectorAll('#typeFilters .filter-btn').forEach(btn => btn.classList.remove('active'));
+                    e.target.classList.add('active');
+                    activeType = e.target.dataset.filter;
+                    displayResources();
+                }
+            });
+
+            // Search
+            document.getElementById('searchInput').addEventListener('input', (e) => {
+                searchTerm = e.target.value;
+                displayResources();
+            });
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            loadResources();
+            setupFilters();
+        });
+    </script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
