@@ -1,0 +1,76 @@
+{
+  "faqs": [
+    {
+      "id": 1,
+      "category": "Getting Started",
+      "question": "I'm in Grade 9. Is it too late to start preparing?",
+      "answer": "No, Grade 9 is an ideal time to start! Most successful olympiad participants begin their preparation in grades 9-10. You have 2-3 years to build a strong foundation."
+    },
+    {
+      "id": 2,
+      "category": "Getting Started",
+      "question": "Do I need a coaching center?",
+      "answer": "Not necessary. With discipline and the right resources, self-study can be very effective. Many successful participants prepare independently using online resources and practice materials."
+    },
+    {
+      "id": 3,
+      "category": "Getting Started",
+      "question": "Which olympiad should I choose?",
+      "answer": "Choose based on your interests and strengths. Try taking practice tests in different subjects to see which one you enjoy most. You can participate in multiple olympiads."
+    },
+    {
+      "id": 4,
+      "category": "Preparation",
+      "question": "How should I prepare?",
+      "answer": "Start with basics, practice regularly, solve past olympiad problems, join online communities, and gradually increase difficulty. Consistency is key."
+    },
+    {
+      "id": 5,
+      "category": "Preparation",
+      "question": "How many hours daily should I study?",
+      "answer": "2-3 hours of focused, quality problem-solving is typically sufficient. Focus on understanding concepts deeply rather than just covering more material."
+    },
+    {
+      "id": 6,
+      "category": "Preparation",
+      "question": "Can I prepare alone?",
+      "answer": "Yes! Many olympiad winners prepare independently. Use online resources, practice problems, join forums like AoPS for math, Codeforces for programming, etc."
+    },
+    {
+      "id": 7,
+      "category": "Selection Process",
+      "question": "What's the selection process?",
+      "answer": "Each olympiad has a multi-stage selection: school/district level → regional/provincial → national → international. Visit individual olympiad pages for specific details."
+    },
+    {
+      "id": 8,
+      "category": "Selection Process",
+      "question": "How many students are selected per year?",
+      "answer": "Varies by olympiad: IMO sends 6 students, IPhO sends 5, IOAA sends 5, IOI sends 4, and others vary. Check specific olympiad pages for details."
+    },
+    {
+      "id": 9,
+      "category": "Opportunities",
+      "question": "Does winning help with university admissions?",
+      "answer": "Yes! International olympiad medals significantly boost university applications, especially for top universities worldwide. Many offer scholarships to medalists."
+    },
+    {
+      "id": 10,
+      "category": "Opportunities",
+      "question": "Can I study abroad after olympiad?",
+      "answer": "Absolutely. Many olympiad participants receive scholarships from top universities in the US, UK, Singapore, and other countries. It opens doors to international education."
+    },
+    {
+      "id": 11,
+      "category": "Technical",
+      "question": "How much does participation cost?",
+      "answer": "School-level registration is typically NPR 400-700. National and international levels are usually funded by organizing bodies and sponsors."
+    },
+    {
+      "id": 12,
+      "category": "Technical",
+      "question": "Can I download past papers?",
+      "answer": "Yes! Visit individual olympiad pages on this website for direct links to official past papers and solutions."
+    }
+  ]
+}
