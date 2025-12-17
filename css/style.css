@@ -519,3 +519,388 @@ body.dark-mode .trust-item .icon {
         width: 100%;
     }
 }
+
+
+/* ===================================
+   PORTAL PAGES STYLING
+   =================================== */
+
+/* Olympiad Hero Section */
+.olympiad-hero {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--bg-dark) 100%);
+    padding: 4rem 2rem 3rem;
+    text-align: center;
+    border-bottom: 3px solid var(--accent-color);
+    margin-bottom: 3rem;
+}
+
+.olympiad-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--white);
+    font-weight: 700;
+}
+
+.olympiad-hero .subtitle {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Olympiad Info Section */
+.olympiad-info {
+    max-width: 1200px;
+    margin: 0 auto 4rem;
+    padding: 0 2rem;
+    display: grid;
+    gap: 2rem;
+}
+
+.info-card {
+    background: var(--primary-dark);
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(139, 92, 246, 0.2);
+}
+
+.info-card h2 {
+    color: var(--accent-color);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.info-card p {
+    color: var(--text-dark);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.info-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-card li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(229, 231, 235, 0.1);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+.info-card li:last-child {
+    border-bottom: none;
+}
+
+.info-card li strong {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+/* Eligibility List Specific Styling */
+.eligibility-list li {
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.eligibility-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--success);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Exam Centers Card */
+.exam-centers-card {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, rgba(139, 92, 246, 0.1) 100%);
+}
+
+.exam-centers-card li {
+    font-size: 1.05rem;
+    padding: 0.6rem 0;
+}
+
+/* Contact Information */
+.contact-info {
+    background: rgba(139, 92, 246, 0.05);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-color);
+}
+
+.contact-info p {
+    margin-bottom: 1rem;
+}
+
+.contact-info strong {
+    color: var(--accent-color);
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.contact-info a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.verification-note {
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid var(--success);
+    color: var(--success) !important;
+    padding: 0.8rem 1rem;
+    border-radius: 6px;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+}
+
+.note {
+    background: rgba(251, 146, 60, 0.1);
+    border-left: 4px solid var(--warning);
+    padding: 1rem;
+    border-radius: 6px;
+    color: var(--text-light);
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+/* Why Participate Section */
+.why-participate {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.05) 0%, rgba(31, 41, 55, 0.5) 100%);
+    padding: 4rem 2rem;
+    margin: 4rem 0;
+    border-top: 2px solid var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.why-participate .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.why-participate h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.section-intro {
+    text-align: center;
+    font-size: 1.15rem;
+    color: var(--text-light);
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    line-height: 1.7;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.benefit-card {
+    background: var(--primary-dark);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    border: 1px solid var(--border-color);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.benefit-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent-color), var(--secondary-color));
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+.benefit-card:hover::before {
+    transform: scaleX(1);
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 12px 40px rgba(139, 92, 246, 0.3);
+    border-color: var(--accent-color);
+}
+
+.benefit-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    filter: drop-shadow(0 0 10px rgba(139, 92, 246, 0.5));
+}
+
+.benefit-card h3 {
+    color: var(--accent-color);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.benefit-card p {
+    color: var(--text-light);
+    line-height: 1.7;
+    font-size: 0.98rem;
+    text-align: center;
+}
+
+/* Resources Section */
+.resources-section {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.resources-section h2 {
+    font-size: 2rem;
+    color: var(--white);
+    margin-bottom: 3rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.resource-category {
+    background: var(--primary-dark);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.resource-category h3 {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.resource-list {
+    list-style: none;
+    padding: 0;
+}
+
+.resource-list li {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(229, 231, 235, 0.1);
+    transition: background 0.3s ease;
+}
+
+.resource-list li:hover {
+    background: rgba(139, 92, 246, 0.05);
+    border-radius: 6px;
+}
+
+.resource-list li:last-child {
+    border-bottom: none;
+}
+
+.resource-list strong {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.resource-tag {
+    display: inline-block;
+    background: rgba(139, 92, 246, 0.2);
+    color: var(--accent-color);
+    padding: 0.3rem 0.8rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    margin-left: 0.5rem;
+    font-weight: 500;
+}
+
+.book-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.4rem 0.8rem;
+    background: rgba(251, 146, 60, 0.1);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    margin-left: 0.5rem;
+    border: 1px solid rgba(251, 146, 60, 0.3);
+}
+
+.book-link:hover {
+    background: rgba(251, 146, 60, 0.2);
+    transform: translateX(5px);
+    border-color: var(--secondary-color);
+}
+
+.resource-list a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.resource-list a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+/* Responsive Design for Portal Pages */
+@media (max-width: 768px) {
+    .olympiad-hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .olympiad-hero .subtitle {
+        font-size: 1rem;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .info-card {
+        padding: 1.5rem;
+    }
+    
+    .why-participate h2 {
+        font-size: 1.8rem;
+    }
+    
+    .benefit-card {
+        padding: 1.5rem;
+    }
+    }
