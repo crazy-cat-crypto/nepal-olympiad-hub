@@ -1,0 +1,116 @@
+{
+  "resources": [
+    {
+      "id": "math-1",
+      "title": "A Primer for Mathematics Competitions",
+      "author": "Alexander Zawaira & Gavin Hitchcock",
+      "type": "book",
+      "subject": "mathematics",
+      "difficulty": "beginner",
+      "url": "https://www.amazon.com/Primer-Mathematics-Competitions-Alexander-Zawaira/dp/0199539871",
+      "description": "Comprehensive introduction to olympiad mathematics, perfect for beginners",
+      "verified": "2024-12-16"
+    },
+    {
+      "id": "math-2",
+      "title": "Art of Problem Solving (AoPS)",
+      "type": "community",
+      "subject": "mathematics",
+      "difficulty": "all",
+      "url": "https://artofproblemsolving.com",
+      "description": "Leading online community for math olympiad preparation with forums, resources, and courses",
+      "verified": "2024-12-16"
+    },
+    {
+      "id": "math-3",
+      "title": "IMO Official Problems Archive",
+      "type": "problems",
+      "subject": "mathematics",
+      "difficulty": "advanced",
+      "url": "https://www.imo-official.org/problems.aspx",
+      "description": "Complete archive of IMO problems from 1959 to present",
+      "verified": "2024-12-16"
+    },
+    {
+      "id": "physics-1",
+      "title": "IPhO Official Website",
+      "type": "website",
+      "subject": "physics",
+      "difficulty": "all",
+      "url": "https://www.ipho-unofficial.org",
+      "description": "Official IPhO website with past papers and syllabus",
+      "verified": "2024-12-16"
+    },
+    {
+      "id": "physics-2",
+      "title": "Problems in General Physics by I.E. Irodov",
+      "author": "I.E. Irodov",
+      "type": "book",
+      "subject": "physics",
+      "difficulty": "advanced",
+      "url": "https://www.amazon.com/Problems-General-Physics-I-Irodov/dp/8123908148",
+      "description": "Classic problem book for physics olympiad preparation",
+      "verified": "2024-12-16"
+    },
+    {
+      "id": "astro-1",
+      "title": "IOAA Official Website",
+      "type": "website",
+      "subject": "astronomy",
+      "difficulty": "all",
+      "url": "http://www.ioaa-astronomy.org",
+      "description": "Official IOAA website with competition information and past papers",
+      "verified": "2024-12-16"
+    },
+    {
+      "id": "cs-1",
+      "title": "USACO Guide",
+      "type": "tutorial",
+      "subject": "informatics",
+      "difficulty": "all",
+      "url": "https://usaco.guide",
+      "description": "Comprehensive guide for competitive programming with tutorials and problem sets",
+      "verified": "2024-12-16"
+    },
+    {
+      "id": "cs-2",
+      "title": "Codeforces",
+      "type": "community",
+      "subject": "informatics",
+      "difficulty": "all",
+      "url": "https://codeforces.com",
+      "description": "Leading competitive programming platform with contests and practice problems",
+      "verified": "2024-12-16"
+    },
+    {
+      "id": "bio-1",
+      "title": "IBO Official Website",
+      "type": "website",
+      "subject": "biology",
+      "difficulty": "all",
+      "url": "https://www.ibo-info.org",
+      "description": "Official IBO website with past papers and syllabus",
+      "verified": "2024-12-16"
+    },
+    {
+      "id": "chem-1",
+      "title": "IChO Official Website",
+      "type": "website",
+      "subject": "chemistry",
+      "difficulty": "all",
+      "url": "https://www.icho-official.org",
+      "description": "Official IChO website with preparatory problems and syllabus",
+      "verified": "2024-12-16"
+    },
+    {
+      "id": "ling-1",
+      "title": "IOL Official Website",
+      "type": "website",
+      "subject": "linguistics",
+      "difficulty": "all",
+      "url": "https://ioling.org",
+      "description": "Official IOL website with past problems and resources",
+      "verified": "2024-12-16"
+    }
+  ]
+}
